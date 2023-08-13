@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: $button_border_radius;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: inherit;
+    font-size: inherit;
+    
+    color: $white;
+    cursor: pointer;
+
+    &-auth {
+        background-color: $blue;
+
+        &:hover {
+            background-color: $blue_hover;
+        }
+        &:active {
+            background-color: $blue_active;
+        }
+        &:disabled {
+            color: $bg;
+            background-color: $me;
+            cursor: not-allowed;
+        }
+    }
+    &-exit {
+        color: $red;
+        background-color: $he;
+
+        &:hover {
+            opacity: 0.9;
+        }
+        &:active {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../styles/_variables";
+
+.label {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & span {
+        color: $bg;
+    }
+}

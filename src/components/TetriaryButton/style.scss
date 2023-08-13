@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.tetriaryButton {
+    border: none;
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+    font-size: inherit;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 1;
+    }
+}

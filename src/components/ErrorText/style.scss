@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.errorText {
+    color: $red;
+    display: none;
+
+    &-show {
+        display: block;
+    }
+}

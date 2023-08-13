@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.chats {
+    &__list {
+        margin-top: 20px;
+        padding-bottom: 60px;
+    }
+    &__settingsLink {
+        position: fixed;
+        bottom: 0;
+    }
+}

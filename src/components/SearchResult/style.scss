@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.searchResult {
+    width: 100%;
+    padding: 20px 20px 20px 15px;
+    border: none;
+    border-bottom: 1px solid $he;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+
+    position: relative;
+    background-color: $black;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $he;
+
+        & path {
+            stroke: $white;
+        }
+    }
+
+    &__name {
+        color: $white;
+    }
+    &__username {
+        color: $bg;
+    }
+    &__icon {
+        position: absolute;
+        right: 20px;
+    }
+}

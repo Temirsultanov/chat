@@ -1,0 +1,11 @@
+@import "../../styles/_variables";
+
+.message {
+    padding: 10px 15px;
+    border-radius: $button_border_radius;
+    background-color: $he;
+
+    &-my {
+        background-color: $me;
+    }
+}

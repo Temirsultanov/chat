@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+
+.userSearch {
+    width: 100%;
+    padding: 10px;
+    background-color: $he;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__form {
+        width: 100%;
+        position: relative;
+    }
+    &__input {
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+
+        & input {
+            width: 355px;
+            pointer-events: all;
+            transition: width 0.2s cubic-bezier(0.4, 0, 0, 1);
+
+            &:focus {
+                width: 275px;
+            }
+        }
+
+        &-filled input {
+            width: 275px;
+        }
+    }
+    &__cancelButton {   
+        position: absolute;
+        right: 10px;
+        z-index: 0;
+    }
+    &__response {
+        width: 100%;
+        height: calc(100% - 60px);
+
+        display: none;
+        justify-content: center;
+
+        position: absolute;
+        top: 60px;
+        z-index: 3;
+        background-color: $black;
+
+
+        &-show {
+            display: flex;
+        }
+    }
+    &__spinner {
+        margin-top: 20px;
+    }
+    &__list {
+        width: 100%;
+    }
+    &__errorText {
+        margin-top: 20px;
+        text-align: center;
+    }
+}

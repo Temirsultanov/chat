@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.chat {
+    &__header, &__messageAddition {
+        display: flex;
+        align-items: center;
+        background-color: $he;
+    }
+    &__header {
+        height: 60px;
+        padding-right: 50px;
+    }
+    &__name {
+        flex: 1;
+        text-align: center;
+    }
+    &__messages {
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__message {
+        align-self: flex-start;
+        &-my {
+            align-self: flex-end;
+        }
+    }
+    &__messageAddition {
+        max-width: $app_width;
+        width: 100vw;
+        padding: 10px;
+        gap: 10px;
+        
+        position: fixed;
+        bottom: 0;
+
+        & .sendButton {
+            flex-shrink: 0;
+        }
+    }
+}
+
+.backButton {
+    width: 50px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $he;
+
+    &:hover path {
+        stroke: $white;
+    }
+}

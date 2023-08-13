@@ -1,0 +1,17 @@
+@import "../../styles/_variables";
+
+.settingsLink {
+    width: 100vw;
+    max-width: $app_width;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $he;
+
+    &:hover {
+        background-color: $me;
+    }
+}

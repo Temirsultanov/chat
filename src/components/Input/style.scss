@@ -1,0 +1,39 @@
+@import "../../styles/_variables";
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: $button_border_radius;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  color: $white;
+  background-color: $black;
+
+  &-chatName {
+    background-color: $he;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.loginInput {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  & .input {
+    padding-left: 31px;
+  }
+  &__icon {
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
+  }
+}
